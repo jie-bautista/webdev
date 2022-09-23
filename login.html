@@ -20,11 +20,11 @@
         <!-- Fontawesome-->
         <script src="https://kit.fontawesome.com/3ed68b28cb.js" crossorigin="anonymous"></script>
     </head>
-    <body id="page-top">
+    <body id="page-top" class="bg-dark">
         <!-- Navbar-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="technology.html"><img src="https://img.guildedcdn.com/ContentMediaGenericFiles/e20c2af9c75a4ce519d613cbc057086d-Full.webp?w=87&h=109" width="50px"> sher</a><a href="technology.html" class="thin">social</a>
+                <a class="navbar-brand" href="technology.html"><img src="https://img.guildedcdn.com/ContentMediaGenericFiles/e20c2af9c75a4ce519d613cbc057086d-Full.webp?w=87&h=109" width="50px"> sher</a><a href="#page-top" class="thin">social</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
@@ -36,68 +36,27 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 h-100">
-                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Gamer PC</h1>
-                        <hr class="divider" />
-                    </div>
-                    <div class="col-lg-8 align-self-baseline">
-                        <a class="btn btn-primary btn-xl" href="#container">Check your PC</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <main class="product">
- 
-            <!-- Left Column / Headphones Image -->
-            <div class="left-column">
-              <img data-image="black" src="https://nzxt.com/assets/cms/34299/1626205599-starterpc1-black-2000x2000-hero.png?auto=format&fit=crop&h=1000&w=1000&fbclid=IwAR1MUhxh31QEWO0v5vZ3CXcyqV_R-s5m34PaivYvOXilDbP6feEDbS6zfXk" alt="" width="400px">
-              <img data-image="white" class="active" src="https://nzxt.com/assets/cms/34299/1659680837-starter-pc-cta-primary.png?auto=format&fit=max&h=900&w=672" alt="" width="400px">
-            </div>
-           
-           
-            <!-- Right Column -->
-            <div class="right-column">
-           
-              <!-- Product Description -->
-              <div class="product-description">
-                <span>Custom PCs</span>
-                <h1>Gamer Tier</h1>
-                <p><b>A great first PC</b> The Gamer PC is built by experts and gives you a competitive advantage.
-                    <br><br><b>Connected for life</b> Wifi and Bluetooth ready to connect to anything you need.
-                    <br><br><b>A PC for the Ages</b> This series is nimble and has plenty of room to grow with you</p>
+        
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+              <!-- Tabs Titles -->
+              <h2 class="active"> Sign In </h2>
+          
+          
+              <!-- Login Form -->
+              <form>
+                <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+                <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+                <input type="submit" class="fadeIn fourth" value="Log In">
+              </form>
+          
+              <!-- Remind Passowrd -->
+              <div id="formFooter">
+                <a class="underlineHover" href="#">Forgot Password?</a>
               </div>
-           
-              <!-- Product Configuration -->
-              <div class="product-configuration">
-           
-                <!-- Product Color -->
-                <div class="product-color">
-                  <span>Color</span>
-           
-                  <div class="color-choose">
-                    <div>
-                      <input data-image="white" type="radio" id="white" name="color" value="white" checked>
-                      <label for="white"><span></span></label>
-                    </div>
-                    <div>
-                      <input data-image="black" type="radio" id="black" name="color" value="black">
-                      <label for="black"><span></span></label>
-                    </div>
-                  </div>
-           
-                </div>
-           
-              <!-- Product Pricing -->
-              <div class="product-price">
-                <span>$1000</span>
-                <a href="#" class="cart-btn">Add to cart</a>
-              </div>
+          
             </div>
-          </main>
+          </div>
         <!-- Footer-->
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - <strong>sher</strong>social</div></div>
@@ -119,16 +78,6 @@
             function button() {
                 alert("Data submitted successfully!");
             }
-
-            $(document).ready(function() {
-                $('.color-choose input').on('click', function() {
-                    var headphonesColor = $(this).attr('data-image');
-
-                    $('.active').removeClass('active');
-                    $('.left-column img[data-image = ' + headphonesColor + ']').addClass('active');
-                    $(this).addClass('active');
-                });
-            });
         </script>
     </body>
 </html>
